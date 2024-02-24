@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {
+  height: 100%;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.sign_in-form {
+  width: 75%;
+  margin: 2rem auto;
+  background-color: #f2fafaed;
+  border-radius: 1rem;
+  padding: 2rem 4rem 3rem;
+  box-shadow: 0 4px 6px rgb(34 126 110 / 38%);
+}
+
+.sign_border {
+  position: relative;
+}
+
+.sign_border::before {
+  content: "";
+  position: absolute;
+  bottom: -4.7px;
+  left: 0;
+  width: 62%;
+  height: 3px;
+  background-color: #01a69c;
+  border-radius: 1rem;
+}
+
+.Input {
+  border: 2px solid #01a69c;
+  background-color: transparent;
+}
+
+.bordered-paragraph {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.socail_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+.btn {
+  width: 35%;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  height: 2.3rem;
+}
+
+@media screen and (min-width: 900px) {
+  .img_desk-div {
+    position: relative;
+    right: 2rem;
+  }
+
+  .desk_section{
+    flex-direction: row;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+.sign_in-form {
+  width: 55%;
+  margin:1.5rem auto;
+  background-color:transparent;
+  border: #01a69c 2px solid;
+  padding: 2rem 3rem 3rem;
+  box-shadow: none;
+}
+}
+@media screen and (min-width: 1125px) {
+.sign_in-form {
+  width: 45%;
+}
+}
+@media screen and (min-width: 1250px) {
+.sign_in-form {
+  width: 37%;
+}
+}
+
+@media screen and (max-width: 550px) {
+  .sign_in-form {
+    width: 87%;
+  }
+
+  .bordered-paragraph p::before {
+    left: 10px;
+    transform: translateX(100%);
+  }
+
+  .bordered-paragraph p::after {
+    right: 10px;
+    transform: translateX(-100%);
+  }
+}
