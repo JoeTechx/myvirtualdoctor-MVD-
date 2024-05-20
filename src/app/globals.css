@@ -138,30 +138,30 @@ body,
     right: 2rem;
   }
 
-  .desk_section{
+  .desk_section {
     flex-direction: row;
     margin: 0 auto;
     width: 90%;
   }
 
-.sign_in-form {
-  width: 55%;
-  margin:1.5rem auto;
-  background-color:transparent;
-  border: #01a69c 2px solid;
-  padding: 2rem 3rem 3rem;
-  box-shadow: none;
-}
+  .sign_in-form {
+    width: 55%;
+    margin: 1.5rem auto;
+    background-color: transparent;
+    border: #01a69c 2px solid;
+    padding: 2rem 3rem 3rem;
+    box-shadow: none;
+  }
 }
 @media screen and (min-width: 1125px) {
-.sign_in-form {
-  width: 45%;
-}
+  .sign_in-form {
+    width: 45%;
+  }
 }
 @media screen and (min-width: 1250px) {
-.sign_in-form {
-  width: 37%;
-}
+  .sign_in-form {
+    width: 37%;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -178,4 +178,47 @@ body,
     right: 10px;
     transform: translateX(-100%);
   }
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 0;
+}
+
+nav.center-nav {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.active {
+  color: #01a69c;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 50%;
+  height: 2px;
+  background-color: #01a69c;
+  transition: width 0.3s ease;
+   @apply animate-width-increase;
+}
+
+.active:hover {
+  transform: scale(1.1);
+}
+
+.nav-width {
+  width: 90%;
+  margin: auto;
+  background-color: #dff4ef;
+}
+
+.width {
+  background-color: #dff4ef;
 }
