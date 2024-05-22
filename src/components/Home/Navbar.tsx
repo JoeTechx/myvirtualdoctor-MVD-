@@ -11,8 +11,8 @@ export const Navbar = () => {
   const route = usePathname();
 
   return (
-    <div className="nav-width">
-      <div className="nav-width flex justify-between items-center bg-[#DFF4EF] pt-4">
+    <div className="bg-[#DFF4EF]">
+      <div className="nav-width flex justify-between items-center pt-4">
         <div>
           <Image src="/images/logo.png" height="70" width="70" alt="Logo" />
         </div>

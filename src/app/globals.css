@@ -206,7 +206,7 @@ nav.center-nav {
   height: 2px;
   background-color: #01a69c;
   transition: width 0.3s ease;
-   @apply animate-width-increase;
+  @apply animate-width-increase;
 }
 
 .active:hover {
@@ -214,11 +214,44 @@ nav.center-nav {
 }
 
 .nav-width {
-  width: 90%;
+  width: 80%;
   margin: auto;
   background-color: #dff4ef;
 }
 
-.width {
+/* Header */
+
+.header-container {
+  width: 80%;
+  margin: auto;
   background-color: #dff4ef;
+  padding-top: 7rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+.header_text-btn h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-right: 7rem;
+}
+
+.header_text-btn p {
+  font-size: 0.78rem;
+  margin-bottom: 1.5rem;
+  padding-right: 13rem;
+}
+
+.header-image {
+  width: 100%;
+}
+
+/* Our Activity */
+
+.activity-container {
+  width: 80%;
+  margin: auto;
 }
