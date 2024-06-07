@@ -187,7 +187,7 @@ body,
 }
 
 nav.center-nav {
-  font-size: 0.7rem;
+  font-size: 0.79rem;
   font-weight: 500;
 }
 
@@ -415,6 +415,91 @@ nav.center-nav {
   display: flex;
   justify-content: center;
   width: 30%;
-  margin-top: -10rem;
-  margin-left: 24rem;
+  margin-top: -11rem;
+  margin-left: 25rem;
+}
+
+.getstarted-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  background-color: #05433f;
+  margin-top: 8rem;
+  border-radius: 0.8rem;
+}
+
+.getstarted-flex {
+  padding: 2rem 3rem;
+}
+
+h2.getstarted-text {
+  color: #ffffff;
+  font-size: 1.79rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+p.getstarted-des {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.13rem;
+  margin-bottom: 1.5rem;
+}
+
+a.getstarted-des_link {
+  color: #6bfbf2;
+}
+
+.getstarted-link_btn {
+  @apply bg-[#ffffff] text-[1rem] text-[#00413D] font-bold px-[1.5rem] py-[0.3rem] rounded-[0.8rem];
+}
+
+.getstarted-image {
+  width: 90rem;
+  margin-right: -1rem;
+}
+
+.getstarted-image img {
+  width: 100%;
+}
+
+.footer {
+  background-color: #dff4ef;
+  margin-top: 5rem;
+}
+
+.footer-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+span.copy {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #05433f;
+}
+
+small.footer-small {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #05433f;
+  display: flex;
+  align-items: center;
+  gap: 0.19rem;
+}
+
+.about-btn {
+  @apply px-4 py-2 bg-[#6bfbf2] text-white font-semibold rounded-lg shadow-md hover:bg-[#01a69c] focus:outline-none focus:ring-2 focus:ring-[#dff4ef] focus:ring-opacity-75;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    width: 10%;
+    color: #1c473d;
+    margin-top: 2rem;
 }

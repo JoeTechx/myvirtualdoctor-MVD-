@@ -1,3 +1,4 @@
+import { GetStarted } from '@/components/Home/GetStarted';
 import { Header } from '@/components/Home/Header';
 import { OurActivity } from '@/components/Home/OurActivity';
 import { WhyUs } from '@/components/Home/WhyUs';
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Header />
       <OurActivity />
       <WhyUs />
+      <GetStarted />
     </div>
   );
 };

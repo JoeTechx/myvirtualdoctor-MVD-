@@ -1,9 +1,24 @@
-import React from 'react'
+"use client";
+import React from "react";
+import { useRouter } from "next/navigation";
 
-const ContactPage = () => {
+const contactPage = () => {
+  const router = useRouter();
+
+  const handleRouter = (event: React.MouseEvent<HTMLDivElement>) => {
+    event.preventDefault();
+    alert("GO HOME!! Come back in year 2050");
+    router.push("/");
+  };
+
   return (
-    <div>contactPage</div>
-  )
-}
-
-export default ContactPage
+    <div
+      onClick={handleRouter}
+      style={{ cursor: "pointer" }}
+      className="about-btn"
+    >
+      Contact Us
+    </div>
+  );
+};
+export default contactPage;
