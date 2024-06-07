@@ -300,7 +300,6 @@ nav.center-nav {
 }
 .activity-flex_card {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 5rem;
 }
@@ -349,5 +348,73 @@ nav.center-nav {
 .why-us_container {
   width: 80%;
   margin: auto;
+}
+.why-us-details {
+  display: flex;
+  margin: auto;
   margin-top: 4rem;
+}
+.why-us_card h1 {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.why-us_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.why-us_image {
+  width: 75%;
+}
+.why-us_image img {
+  width: 85%;
+}
+.play-stop_card {
+  @apply relative w-[80%] max-w-3xl rounded-xl;
+  margin-top: 2rem;
+}
+
+.play-stop_cards {
+  @apply flex transition-transform duration-700 ease-in-out;
+}
+
+.play-stop_box {
+  @apply min-w-full;
+}
+
+.play-stop_details {
+  @apply bg-white rounded-xl flex items-center justify-center;
+  box-shadow: 9px 9px 19px 0 #30303042;
+  padding: 4rem 2rem;
+}
+
+.play-stop_cicle {
+  @apply absolute bottom-[-3rem] left-0 right-0 flex justify-center space-x-2;
+}
+
+.play-stop_text {
+  @apply text-[1.5rem] font-bold mb-4 text-gray-800;
+}
+
+.play-stop_des {
+  @apply text-[1rem] text-gray-600;
+}
+
+.play-stop_button {
+  @apply absolute -bottom-[5rem] right-[12.3rem] flex space-x-2;
+}
+
+.play-stop_btn {
+  @apply px-[0.4rem] py-[0.4rem] bg-[#01a69c] text-white font-semibold rounded-[1rem] shadow-md transition-colors duration-300 text-[0.6rem];
+}
+
+.why-us_arrow {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  margin-top: -10rem;
+  margin-left: 24rem;
 }

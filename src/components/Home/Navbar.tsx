@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import  { navLinks } from "../../../constant/index";
+import { navLinks } from "../../app/index";
 import AuthButton from "@/components/button/AuthButton";
 import { Button } from "@/components/ui/button";
 
